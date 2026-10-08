@@ -82,28 +82,12 @@ export default function Conditions() {
 
         <div className="webcam-card">
           <div className="webcam-viewport">
-            <div className="webcam-overlay">
-              <span className="live-pill">LIVE</span>
-              <div className="webcam-status">
-                <span>Beach cam</span>
-                <strong>01:42 PM</strong>
-              </div>
-            </div>
-          </div>
-
-          <div className="webcam-metrics">
-            <div>
-              <span>Wind</span>
-              <strong>22 kt</strong>
-            </div>
-            <div>
-              <span>Sea</span>
-              <strong>Calm</strong>
-            </div>
-            <div>
-              <span>Air</span>
-              <strong>27°C</strong>
-            </div>
+            <iframe
+              src="https://g0.ipcamlive.com/player/player.php?alias=procentercam1"
+              title="Live beach webcam at Ialyssos, Rhodes"
+              loading="lazy"
+              allowFullScreen
+            />
           </div>
         </div>
       </div>

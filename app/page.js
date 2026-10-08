@@ -30,8 +30,8 @@ export default function Home() {
           "Rental is by the hour, day, or week, with quick swaps if conditions change.",
         ]}
         tags={[
-          { label: "Center info", href: "/blank" },
-          { label: "Freeride & slalom kit", href: "/blank" },
+          { label: "Beginner to Advanced", href: "/beginner-to-advanced" },
+          { label: "Center info", href: "/center-info" },
           { label: "Daily gear checks", href: "/blank" },
         ]}
       />

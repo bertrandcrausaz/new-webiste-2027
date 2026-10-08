@@ -428,59 +428,18 @@ p.lead{font-size:17px; color:#3a4a52; margin-top:16px; max-width:60ch;}
 
 .webcam-viewport{
   position:relative;
-  min-height:260px;
+  aspect-ratio:16 / 9;
   border-radius:14px;
-  background:
-    linear-gradient(180deg, rgba(8,27,39,0.2), rgba(8,27,39,0.7)),
-    url('/images/hero-wingfoil-jump.jpg') center/cover no-repeat;
+  background:var(--navy-deep);
   overflow:hidden;
 }
 
-.webcam-overlay{
+.webcam-viewport iframe{
   position:absolute;
-  inset:16px 16px auto 16px;
-}
-
-.live-pill{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:7px 12px;
-  border-radius:999px;
-  background:rgba(226, 78, 44, 0.9);
-  color:var(--foam);
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-}
-
-.webcam-status{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:8px 10px;
-  border-radius:10px;
-  background:rgba(8,27,39,0.55);
-  border:1px solid rgba(250,248,243,0.15);
-}
-
-.webcam-status span{color:rgba(250,248,243,0.72);}
-
-.webcam-status strong{color:var(--foam);}
-
-.webcam-metrics{
-  display:grid;
-  grid-template-columns:repeat(3, minmax(0, 1fr));
-  gap:12px;
-  margin-top:16px;
-}
-
-.webcam-metrics div{
-  padding:12px 10px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:rgba(255,255,255,0.02);
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
 }
 
 @media (max-width: 900px){
@@ -494,7 +453,6 @@ p.lead{font-size:17px; color:#3a4a52; margin-top:16px; max-width:60ch;}
   .forecast-summary{flex-direction:column; align-items:flex-start;}
   .summary-metrics{grid-template-columns:1fr; width:100%;}
   .hourly-forecast{grid-template-columns:repeat(2, minmax(80px, 1fr));}
-  .webcam-metrics{grid-template-columns:1fr;}
 }
 
 /* CONTACT */
@@ -543,4 +501,65 @@ footer{background:var(--navy-deep); color:var(--sand); padding:64px 0 28px;}
   .foot-grid{grid-template-columns:1fr 1fr;}
   .split-media .frame{display:none;}
   section{padding:64px 0;}
+}
+
+/* BEGINNER-TO-ADVANCED PAGE */
+.page-hero{
+  background:var(--navy);
+  color:var(--foam);
+  padding:160px 0 90px;
+}
+.breadcrumb{
+  font-size:14px;
+  color:var(--sand);
+  opacity:0.75;
+  margin-bottom:18px;
+}
+.breadcrumb a{color:var(--coral); opacity:1;}
+.page-hero h1{
+  font-size:clamp(44px,7vw,84px);
+  max-width:760px;
+}
+.page-hero p.lead{
+  color:var(--sand);
+  max-width:60ch;
+  margin-top:18px;
+  font-size:17px;
+}
+.progress-steps{background:var(--foam); padding:90px 0;}
+.step-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:56px;
+  align-items:center;
+  margin-bottom:80px;
+}
+.step-row:last-child{margin-bottom:0;}
+.step-row.reverse .step-media{order:2;}
+.step-media{position:relative;}
+.step-media img{width:100%; height:360px; object-fit:cover;}
+.step-media .step-no{
+  position:absolute;
+  top:-18px; left:-18px;
+  width:54px; height:54px;
+  background:var(--coral);
+  color:var(--foam);
+  font-family:'Bebas Neue', sans-serif;
+  font-size:24px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+}
+.step-text .kicker{color:var(--coral); margin-bottom:10px;}
+.step-text h3{font-size:clamp(28px,3.5vw,42px); color:var(--navy); margin-bottom:16px;}
+.step-text p{color:#3a4a52; font-size:16px; margin-bottom:14px;}
+.step-text p:last-child{margin-bottom:0;}
+.cta-band{background:var(--navy-deep); color:var(--foam); padding:90px 0; text-align:center;}
+.cta-band h2{font-size:clamp(34px,5vw,56px); margin-bottom:16px;}
+.cta-band p{color:var(--sand); max-width:50ch; margin:0 auto 30px; font-size:16px;}
+.cta-actions{display:flex; justify-content:center; flex-wrap:wrap; gap:16px;}
+
+@media (max-width: 900px){
+  .step-row, .step-row.reverse{grid-template-columns:1fr;}
+  .step-row.reverse .step-media{order:0;}
+  .page-hero{padding:120px 0 64px;}
 }
