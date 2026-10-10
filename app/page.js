@@ -23,7 +23,7 @@ export default function Home() {
         id="windsurf"
         image="/images/windsurf-discipline.jpg"
         alt="Windsurfer sailing off Rhodes"
-        kicker="DISCIPLINE 01"
+      kicker="WINDSURF PRO CENTER"
         title="Windsurfing"
         paragraphs={[
           "From flat-water first tacks to full planing on a chop, our racks are set up for every level — freeride, freestyle and slalom gear tuned to the day's wind.",
@@ -41,7 +41,7 @@ export default function Home() {
         reverse
         image="/images/wingfoil-sunset.jpg"
         alt="Wing foiler jumping off Rhodes"
-        kicker="DISCIPLINE 02"
+        kicker="WING FOIL PRO CENTER"
         title="Wing Foil"
         paragraphs={[
           "The newest addition to the station, and the fastest-growing. Foil boards, wings in every size, and coaches who can get most beginners up and gliding within a few sessions.",

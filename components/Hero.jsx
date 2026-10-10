@@ -32,7 +32,7 @@ export default function Hero() {
         </h1>
         <p className="hero-sub">
           Windsurfing and wing foil holidays on one of the windiest
-          coastlines in the Mediterranean — steady thermals, warm water,
+          coastlines in the Mediterranean — steady thermals, warm water, single and family-friendly,
           all levels welcome.
         </p>
         <div className="hero-actions">

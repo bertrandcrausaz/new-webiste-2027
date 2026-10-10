@@ -3,7 +3,7 @@ export default function Nav() {
     <header className="nav">
       <div className="nav-inner">
         <a href="/" className="brand" aria-label="Rhodes Wind Center home">
-          RHODES<span>WIND</span>CENTER
+          RHODES<span>PRO</span>CENTER
         </a>
         <nav className="links">
           <a href="/#windsurf">Windsurfing</a>

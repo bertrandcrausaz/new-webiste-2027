@@ -1,10 +1,10 @@
 const BRANDS = [
-  { name: "Duotone", note: "Sails & wings" },
-  { name: "JP Australia", note: "Boards" },
-  { name: "Neilpryde", note: "Sails & rigs" },
-  { name: "Tabou", note: "Boards" },
+  { name: "Duotone", note: "Boards,Sails & Wings" },
+  { name: "JP Australia", note: "Wind & Wing Boards" },
+  { name: "Neilpryde", note: "Sails, rigs & Wings" },
+  { name: "Tabou", note: "Wind & Wing Boards" },
   { name: "Severne", note: "Sails" },
-  { name: "GA Sails", note: "Sails & rigs" },
+  { name: "GA Sails", note: "Sails, rigs & Wings" },
 ];
 
 export default function Equipment() {
