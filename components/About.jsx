@@ -5,7 +5,7 @@ export default function About() {
         <div className="split-media">
           <div className="frame"></div>
           <img
-            src="/images/about-station.jpg"
+            src="/images/procenter-station.jpg"
             alt="Windsurf station on the beach in Ialyssos"
           />
         </div>

@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 
 const slides = [
   '/images/wingfoil-sunset.jpg',
-  '/images/station-overview.jpg',
+  '/images/family-holidays.jpg',
   '/images/hero-wingfoil-jump.jpg',
-  '/images/gallery-sails-rack.jpg',
+  '/images/procenter-windsurfing.jpg',
 ];
 
 export default function Hero() {
