@@ -35,7 +35,7 @@ const STEPS = [
     no: 3,
     kicker: "STAGE THREE",
     title: "Advanced — carving, jumping, racing",
-    image: "/images/progression-advanced.jpg",
+    image: "/images/Carving Jibe.jpg",
     alt: "Experienced windsurfers riding waves side by side",
     paragraphs: [
       "For riders who already plane confidently, coaching shifts to technique: carve gybes, footstraps and harness work, chop-hop jumps, and — for the strongest winds on our beach — full-power slalom sailing.",

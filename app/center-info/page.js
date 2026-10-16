@@ -12,7 +12,7 @@ const CENTER_SECTIONS = [
     no: 1,
     kicker: "THREE BEACHFRONT CENTERS",
     title: "Find your place on the bay",
-    image: "/images/station-overview.jpg",
+    image: "/images/Rhodes-action.jpg",
     alt: "Overview of a windsurf center beside the beach in Rhodes",
     paragraphs: [
       "ProCenter's windsurf stations are in Ialyssos, directly by the water and within about 500 metres of one another. The bay's steady side-shore wind offers options for a range of experience levels.",
@@ -23,7 +23,7 @@ const CENTER_SECTIONS = [
     no: 2,
     kicker: "EQUIPMENT",
     title: "Choose gear for your session",
-    image: "/images/station-grass-sails.jpg",
+    image: "/images/choose-equipment.jpg",
     alt: "Windsurf sails rigged and ready at the beach station",
     reverse: true,
     paragraphs: [
@@ -35,7 +35,7 @@ const CENTER_SECTIONS = [
     no: 3,
     kicker: "TEAM & SAFETY",
     title: "Support from arrival to launch",
-    image: "/images/windsurf-discipline.jpg",
+    image: "/images/Blue-Horizon-view.jpg",
     alt: "Windsurfer sailing along the Rhodes coastline",
     paragraphs: [
       "The center team welcomes guests, helps with equipment selection, and offers coaching to help riders progress. Baywatch towers and powerboats support the center's on-water safety measures.",
