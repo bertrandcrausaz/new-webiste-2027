@@ -23,7 +23,7 @@ export default function Equipment() {
           <div className="equip-photos">
             <img
               className="tall"
-              src="/images/station-overview.jpg"
+              src="/images/procenter-station.jpg"
               alt="Rows of sails at the windsurf station"
             />
             <img
