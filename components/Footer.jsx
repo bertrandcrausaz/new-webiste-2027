@@ -16,6 +16,7 @@ export default function Footer() {
             <h4>Explore</h4>
             <a href="#windsurf">Windsurfing</a>
             <a href="#wingfoil">Wing Foil</a>
+            <a href="/windsurf-prices">Prices</a>
             <a href="#stay">Accommodation</a>
             <a href="#gallery">Gallery</a>
           </div>

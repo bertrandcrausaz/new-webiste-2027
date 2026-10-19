@@ -8,6 +8,7 @@ export default function Nav() {
         <nav className="links">
           <a href="/#windsurf">Windsurfing</a>
           <a href="/#wingfoil">Wing Foil</a>
+          <a href="/windsurf-prices">Prices</a>
           <a href="/#stay">Accommodation</a>
           <a href="/#gallery">Gallery</a>
           <a href="/#contact">Contact</a>

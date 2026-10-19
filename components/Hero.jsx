@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const slides = [
   '/images/wingfoil-sunset.jpg',
   '/images/family-holidays.jpg',
-  '/images/hero-wingfoil-jump.jpg',
+  '/images/Rhodes-action.jpg',
   '/images/procenter-windsurfing.jpg',
 ];
 
@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-eyebrow">IALYSSOS, RHODES — GREECE</div>
         <h1 className="hero-title">
-          RIDE THE <em>MELTEMI</em>
+          RIDE THE <em>WIND</em>
         </h1>
         <p className="hero-sub">
           Windsurfing and wing foil holidays on one of the windiest

@@ -563,3 +563,175 @@ footer{background:var(--navy-deep); color:var(--sand); padding:64px 0 28px;}
   .step-row.reverse .step-media{order:0;}
   .page-hero{padding:120px 0 64px;}
 }
+
+/* PRICES */
+.price-hero{
+  position:relative;
+  min-height:480px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  color:var(--foam);
+  background:
+    linear-gradient(90deg, rgba(8,27,39,0.94) 0%, rgba(8,27,39,0.76) 54%, rgba(8,27,39,0.25) 100%),
+    url('/images/windsurf-discipline.jpg') center 46% / cover no-repeat;
+}
+.price-hero-content{width:100%; padding-top:48px; padding-bottom:56px;}
+.price-hero .breadcrumb{margin-bottom:38px;}
+.price-hero .kicker{color:var(--sand); letter-spacing:0.08em;}
+.price-hero h1{font-size:clamp(52px,8vw,100px); max-width:850px;}
+.price-hero h1 em{font-style:normal; color:var(--coral);}
+.price-hero-content > p{max-width:530px; margin:20px 0 26px; color:var(--sand); font-size:17px;}
+.price-hero-note{
+  position:absolute;
+  right:28px;
+  bottom:26px;
+  color:var(--sand);
+  font-size:11px;
+  letter-spacing:0.14em;
+}
+.price-list{background:var(--foam);}
+.price-intro{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:36px;
+  margin-bottom:32px;
+}
+.price-intro > p{max-width:390px; color:#5a6a70; font-size:15px;}
+.price-jump-links{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:52px;}
+.price-jump-links a{
+  border:1px solid rgba(14,42,59,0.18);
+  border-radius:2px;
+  padding:8px 15px;
+  color:var(--navy);
+  font-size:13px;
+  font-weight:600;
+  transition:background .15s, color .15s, border-color .15s;
+}
+.price-jump-links a:hover{background:var(--navy); border-color:var(--navy); color:var(--foam);}
+.price-section-list{display:flex; flex-direction:column; gap:58px;}
+.price-category{
+  display:grid;
+  grid-template-columns:0.85fr 1.4fr;
+  gap:56px;
+  align-items:start;
+  scroll-margin-top:90px;
+}
+.price-category-heading{display:grid; grid-template-columns:46px 1fr; gap:16px;}
+.price-number{
+  color:var(--coral);
+  font-family:'Bebas Neue', sans-serif;
+  font-size:25px;
+  padding-top:2px;
+}
+.price-category-heading .kicker{font-size:12px; letter-spacing:0.06em; margin-bottom:8px;}
+.price-category-heading h3{font-size:clamp(28px,3.3vw,40px); color:var(--navy); margin-bottom:10px;}
+.price-category-heading p{color:#5a6a70; font-size:14px; max-width:38ch;}
+.price-cards{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+.price-card{
+  min-height:128px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:20px;
+  border:1px solid rgba(14,42,59,0.15);
+  background:#fff;
+}
+.price-card.featured{border-top:3px solid var(--coral); padding-top:18px;}
+.price-card h4{color:var(--navy); font-size:15px; font-weight:700; margin-bottom:5px;}
+.price-card p{color:#5a6a70; font-size:13px;}
+.price-amount{
+  color:var(--navy);
+  font-family:'Bebas Neue', sans-serif;
+  font-size:34px;
+  line-height:1;
+}
+.price-note{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  margin-top:68px;
+  padding:26px 30px;
+  background:var(--sand);
+}
+.price-note-mark{
+  color:var(--coral);
+  font-family:'Bebas Neue', sans-serif;
+  font-size:32px;
+  line-height:1;
+}
+.price-note h3{font-size:23px; color:var(--navy); margin-bottom:6px;}
+.price-note p{color:#3a4a52; font-size:14px;}
+.price-cta .kicker{color:var(--coral);}
+.price-cta h2{margin-bottom:14px;}
+
+.rental-prices{background:#f2e7d3;}
+.rental-intro{margin-bottom:34px;}
+.rental-table-scroll{
+  overflow-x:auto;
+  border:1px solid rgba(14,42,59,0.16);
+  background:#fff;
+  scrollbar-color:var(--coral) rgba(14,42,59,0.08);
+}
+.rental-table-scroll:focus-visible{outline:3px solid var(--coral); outline-offset:3px;}
+.rental-table{
+  width:100%;
+  min-width:880px;
+  border-collapse:collapse;
+  color:var(--ink);
+  font-size:14px;
+  text-align:center;
+}
+.rental-table th,.rental-table td{
+  padding:12px 14px;
+  border-right:1px solid rgba(14,42,59,0.14);
+  border-bottom:1px solid rgba(14,42,59,0.14);
+  white-space:nowrap;
+}
+.rental-table th:last-child,.rental-table td:last-child{border-right:0;}
+.rental-table tbody tr:last-child th,.rental-table tbody tr:last-child td{border-bottom:0;}
+.rental-table thead th{
+  background:var(--navy);
+  color:var(--foam);
+  font-weight:600;
+}
+.rental-table thead .rental-tier-head th{font-size:14px;}
+.rental-table thead .rental-tier-head th:first-child{
+  min-width:240px;
+  text-align:left;
+}
+.rental-table thead .rental-subhead th{font-size:12px; color:var(--sand);}
+.rental-table tbody tr:not(.rental-group-row){background:#fff;}
+.rental-table tbody tr:not(.rental-group-row):nth-child(even){background:#faf8f3;}
+.rental-table .rental-period{
+  min-width:240px;
+  text-align:left;
+  font-weight:500;
+}
+.rental-table .rental-group-row th{
+  padding:9px 14px;
+  background:var(--teal);
+  color:var(--foam);
+  text-align:left;
+  font-size:12px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+.rental-table-note{margin-top:14px; color:#5a6a70; font-size:13px;}
+
+@media (max-width: 900px){
+  .price-category{grid-template-columns:1fr; gap:24px;}
+}
+@media (max-width: 600px){
+  .price-hero{min-height:450px; background-position:58% center;}
+  .price-hero-content{padding-top:24px;}
+  .price-hero .breadcrumb{margin-bottom:28px;}
+  .price-hero-note{display:none;}
+  .price-intro{display:block;}
+  .price-intro > p{margin-top:14px;}
+  .price-jump-links{margin-bottom:40px;}
+  .price-cards{grid-template-columns:1fr;}
+  .price-note{margin-top:48px; padding:22px;}
+}
