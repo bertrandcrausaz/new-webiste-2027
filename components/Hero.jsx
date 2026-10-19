@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const slides = [
   '/images/wingfoil-sunset.jpg',
   '/images/family-holidays.jpg',
-  '/images/Rhodes-action.jpg',
+  '/images/hero-wingfoil-jump.jpg',
   '/images/procenter-windsurfing.jpg',
 ];
 
