@@ -1,12 +1,6 @@
-export default function Conditions() {
-  const hourly = [
-    { time: "09:00", wind: "12 kt" },
-    { time: "11:00", wind: "18 kt" },
-    { time: "13:00", wind: "22 kt" },
-    { time: "15:00", wind: "24 kt" },
-    { time: "17:00", wind: "20 kt" },
-  ];
+import WindForecast from "./WindForecast";
 
+export default function Conditions() {
   return (
     <section className="conditions">
       <div className="wrap cond-grid">
@@ -23,62 +17,24 @@ export default function Conditions() {
           </p>
         </div>
         <div className="cond-box">
-          <div className="kicker">LIVE ON SITE</div>
+          <div className="kicker">LIVE WIND FORECAST</div>
           <p>
-            A beach webcam and live forecast run on our booking site so you
-            can check conditions before every session.
+            Check the latest Windy forecast for Ialyssos Bay before your
+            session. See the next five days at 17:00 local time, with wind
+            speed, direction, air temperature, and wave height.
           </p>
           <a href="#contact" className="btn btn-solid">
             Ask us about today&apos;s wind
           </a>
           <div className="cond-note">
-            Webcam & forecast widgets connect once this page is live on your
-            own domain.
+            Wind forecast updates every 30 minutes. Conditions on the water
+            may vary.
           </div>
         </div>
       </div>
 
       <div className="wrap forecast-wrap">
-        <div className="forecast-card">
-          <div className="forecast-header">
-            <span className="forecast-label">Wind forecast</span>
-            <span className="forecast-date">Today · Ialyssos</span>
-          </div>
-
-          <div className="forecast-summary">
-            <div className="summary-value">
-              18<span>–24</span>
-              <small>kt</small>
-            </div>
-
-            <div className="summary-metrics">
-              <div>
-                <span>Direction</span>
-                <strong>NW</strong>
-              </div>
-              <div>
-                <span>Water</span>
-                <strong>23°C</strong>
-              </div>
-              <div>
-                <span>Wave</span>
-                <strong>0.8 m</strong>
-              </div>
-            </div>
-          </div>
-
-          <div className="hourly-forecast" aria-label="Hourly wind forecast">
-            {hourly.map((item) => (
-              <div className="hour-card" key={item.time}>
-                <span>{item.time}</span>
-                <strong>{item.wind}</strong>
-                <div className="mini-bar">
-                  <i style={{ width: `${Math.min(100, Number.parseInt(item.wind, 10) * 4)}%` }} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <WindForecast />
 
         <div className="webcam-card">
           <div className="webcam-viewport">

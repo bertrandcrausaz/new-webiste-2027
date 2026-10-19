@@ -67,3 +67,16 @@ npm start
 The easiest path is [Vercel](https://vercel.com) (made by the Next.js
 team): push this folder to a GitHub repo, import it on vercel.com, and
 it deploys automatically. Any standard Node host works too.
+
+### Windy point forecast
+
+The live Ialyssos wind forecast uses Windy's Point Forecast API. Create a
+Point Forecast API key in the [Windy API portal](https://api.windy.com/),
+then add it as the server-only `WINDY_POINT_FORECAST_API_KEY` environment
+variable. For local development, put it in `.env.local`; for a hosted site,
+add it to the host's server environment settings and redeploy. Do not expose
+the key in client-side code or commit it to Git.
+
+The forecast card refreshes automatically every 30 minutes and displays the
+next five days at 17:00 Ialyssos time, including wind speed, direction, air
+temperature, and wave height.
